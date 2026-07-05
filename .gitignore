@@ -1,0 +1,61 @@
+# ============================================
+# phaopanya-transport — .gitignore
+# ============================================
+
+# --- Sensitive files (NEVER commit) ---
+*.xlsx
+*.gsheet
+*.csv.bak
+*secret*
+*token*
+*credential*
+*.env
+.env
+.env.*
+!.env.example
+
+# --- Google Sheets / Drive downloads ---
+~/Downloads/
+*.crdownload
+
+# --- AppSheet exports to review before commit ---
+# (CSV is tracked in data/ — but new exports should be reviewed)
+# AppSheet_Documentation_*.csv
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# --- Node.js (if any tooling is added later) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+.pytest_cache/
+
+# --- Build artifacts ---
+dist/
+build/
+*.log
+
+# --- Temp files ---
+*.tmp
+*.bak
+*.orig
